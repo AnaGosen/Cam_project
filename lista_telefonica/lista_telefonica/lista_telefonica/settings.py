@@ -86,30 +86,6 @@ TEMPLATES = [
 
 WSGI_APPLICATION = 'lista_telefonica.wsgi.application'
 
-
-# Database
-# https://docs.djangoproject.com/en/3.2/ref/settings/#databases
-'''
-DATABASES = {
-    'default': {
-        'ENGINE': 'django.db.backends.sqlite3',
-        'NAME': BASE_DIR / 'db.sqlite3',
-    }
-}
-'''
-'''
-DATABASES = {
-    "default": {
-        "ENGINE": "django.db.backends.postgresql",
-        "NAME": "CAM PROJECT",
-        "USER": "postgres",
-        "PASSWORD": "C@mThing2021", #C@mThing2021
-        "HOST": "localhost",
-        "PORT": 5432,
-    }
-}'''
-
-
 DATABASES = {
     'default': {
         'ENGINE': 'django.db.backends.postgresql',
