@@ -13,7 +13,7 @@ from .filters import PhoneFilter
 from .forms import PhoneForm
 
 def index(request):
-	phones_list = Phone.objects.all() # Pega todos os objetos de Phone
+	phones_list = Phone.objects.all().order_by('name') # Pega todos os objetos de Phone
 	phones_filter = PhoneFilter(request.GET, queryset=phones_list) # Filtra os objetos pelo nome que foi escrito
 	if phones_list:
 		return render(request, 'phones/index.html', {'filter': phones_filter, 'phones_list': phones_list})
